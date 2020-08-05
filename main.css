@@ -5,11 +5,32 @@ header {
 }
 
 header h1 {
-  color: #bdbdbd;
+  color: lightsteelblue;
   text-shadow: 5px 5px 5px #000000;
   text-align: center;
   margin: 0;
   padding: 20px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: lightsteelblue;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
 }
 
 body {
@@ -23,7 +44,7 @@ img {
   width: 100%
 }
 
-a {
+main a {
   text-decoration: none;
   color: #004dff;
 }
@@ -90,6 +111,26 @@ footer p {
 /*Desktop*/
 @media all and (min-width: 800px) {
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    font-size: 42px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+
   .wrapper {
     width: 80%;
     margin: auto;
@@ -99,11 +140,11 @@ footer p {
     flex-direction: row;
   }
 
-  a:link {
+  main a:link {
     text-decoration: none;
   }
 
-  a:hover {
+  main a:hover {
     text-decoration: underline;
   }
 
@@ -125,4 +166,18 @@ footer p {
   padding: 20px 0 30px 0;
   margin: 120px 0px 50px 0px;
   color: black;
+}
+
+form {
+  padding-right: 6px;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }

@@ -12,6 +12,14 @@
 
   <header>
     <h1>Malik DeJean</h1>
+    <nav>
+			<ul id="menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about-me">About Me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			</ul>
+		</nav>
   </header>
 
   <main>
@@ -77,7 +85,7 @@
 
     <article id="contact">
       <div class="wrapper">
-        <h2>Contact Information</h2>
+        <h2>Contact Me</h2>
         <div class="group">
           <div class="item">
             <ul>
@@ -86,6 +94,20 @@
               <li><a href='https://github.com/M-DeJean' target='_blank'>GitHub</a></li>
               <li><a href='mailto:dejeantech@yahoo.com'>E-Mail</a></li>
             </ul>
+          </div>
+          <div class="item-double">
+                <form action="https://formspree.io/mjvaljlw"
+                method="post">
+                  <label for="username">Name:</label>
+                  <input id="username" type="text" name="name" placeholder="Please enter your name">
+        
+                  <label for="form-email">E-mail:</label>
+                  <input id="form-email" type="text" name="email" placeholder="Please enter your E-mail">
+        
+                  <label for="form-message">Message:</label>
+                  <textarea id="form-message" name="message" placeholder="Send me a message!"></textarea>
+                  <button type="submit">Submit</button>
+                </form>
           </div>
         </div>
       </div>
